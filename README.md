@@ -8,7 +8,7 @@ Repositório para provisionamento de um cluster Kubernetes na AWS utilizando Ter
 
 ## Pré-requisitos
 * Terraform instalado - [Tutorial](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-* AWS CLI instalado - [Tutorial]([https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+* AWS CLI instalado - [Tutorial](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 
 ### Execução
 
