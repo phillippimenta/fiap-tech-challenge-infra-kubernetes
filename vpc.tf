@@ -39,25 +39,5 @@ resource "aws_route_table" "rtbl" {
 resource "aws_route_table_association" "rtbl-association" {
   count          = 2
   route_table_id = aws_route_table.rtbl.id
-  subnet_id = aws_subnet.subnets.*.id[count.index]
+  subnet_id      = aws_subnet.subnets.*.id[count.index]
 }
-
-# resource "aws_subnet" "fiap-tech-challenge-subnet-1" {
-#   availability_zone = "us-east-1a"
-#   vpc_id            = aws_vpc.main.id
-#   cidr_block        = "10.0.0.0/24"
-
-#   tags = {
-#     Name = "${var.prefix}-subnet-1"
-#   }
-# }
-
-# resource "aws_subnet" "fiap-tech-challenge-subnet-2" {
-#   availability_zone = "us-east-1a"
-#   vpc_id            = aws_vpc.main.id
-#   cidr_block        = "10.0.1.0/24"
-
-#   tags = {
-#     Name = "${var.prefix}-subnet-2"
-#   }
-# }
